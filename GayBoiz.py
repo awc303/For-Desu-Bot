@@ -25,11 +25,7 @@ class GayBoiz:
                 debug=True
             if(debug):
                 await self.bot.say("Start")
-            reddit = praw.Reddit(client_id='DAsQaf9Ek2m3yA',
-                client_secret='l6Vd3bpngUeTdCDAD1WQ9ia0olA',
-                password='spooperz',
-                user_agent='testscript',
-                username='WoofWoofBork')
+            reddit = #replace with info
             sub=reddit.subreddit('doggos')
             posts=sub.random()
             if(posts.url.find("imgur")!=-1):
@@ -44,33 +40,21 @@ class GayBoiz:
 
     @commands.command()
     async def rando(self, sreddit):
-        reddit = praw.Reddit(client_id='DAsQaf9Ek2m3yA',
-            client_secret='l6Vd3bpngUeTdCDAD1WQ9ia0olA',
-            password='spooperz',
-            user_agent='testscript',
-            username='WoofWoofBork')
+        reddit = #replace with info
         sub=reddit.subreddit(sreddit)
         posts=sub.random()
         await self.bot.say(posts.url)
 
     @commands.command()
     async def lowqualitymeme(self):
-        reddit = praw.Reddit(client_id='DAsQaf9Ek2m3yA',
-            client_secret='l6Vd3bpngUeTdCDAD1WQ9ia0olA',
-            password='spooperz',
-            user_agent='testscript',
-            username='WoofWoofBork')
+        reddit = #replace with info
         sub=reddit.subreddit("memes")
         posts=sub.random()
         await self.bot.say(posts.url)
 
     @commands.command()
     async def topdoggo(self, specific):
-        reddit = praw.Reddit(client_id='DAsQaf9Ek2m3yA',
-            client_secret='l6Vd3bpngUeTdCDAD1WQ9ia0olA',
-            password='spooperz',
-            user_agent='testscript',
-            username='WoofWoofBork')
+        reddit =  #replace with info
         sub=reddit.subreddit(specific)
         listgen=sub.top('hour').next()
         await self.bot.say(listgen.url)
